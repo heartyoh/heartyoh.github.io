@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "모히또가서 몰디브 한잔!"
+date:   2017-01-26 17:31:27 +0900
+categories: mojito maldives
+---
+{% highlight javascript %}
+function shuffle(a) {
+  for(let i = a.length; i; i--) {
+    let j = Math.floor(Math.random() * i);
+    [a[i - 1], a[j]] = [a[j], a[i - 1]];
+  }
+}
+var 병헌 = ['지금', '나랑', '장난', '하냐'];
+shuffle(병헌);
+console.error(병헌.join(' '));
+// => 장난 지금 나랑 하냐 ???
+{% endhighlight %}
