@@ -10,9 +10,10 @@ function shuffle(a) {
     let j = Math.floor(Math.random() * i);
     [a[i - 1], a[j]] = [a[j], a[i - 1]];
   }
+  return a;
 }
-var 병헌 = ['지금', '나랑', '장난', '하냐'];
-shuffle(병헌);
-console.error(병헌.join(' '));
-// => 장난 지금 나랑 하냐 ???
+var 병헌 = '지금 나랑 장난 하냐';
+console.error(shuffle(병헌.split(' ')).join(' '));
+// 장난 지금 나랑 하냐 ???
+// 하냐 장난 지금 나랑 ???
 {% endhighlight %}
