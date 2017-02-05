@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "PRPL!"
+date:   2017-01-27 13:38:00 +0900
+categories: pwa prpl serviceworker preload
+---
+
+구글이 웹을 어플리케이션 플랫폼으로 끌고 가려는 시도를 꾸준히 계속해가고 있다.
+
+작명에 고민을 많이 했을 듯한, 그런데 그렇게 참신하지도 직관적이지도 못한 이름의 'serviceworker'라는 기능.
+
+
+PWA - Progressive Web Application
+특징들 : 1, 2, 3, 4
+
+PRPL - 퍼플 패턴
+- Push critical resources for the initial URL route. => HTTP2 server push
+- Render initial route.
+- Pre-cache remaining routes. => browser support link preload <link rel="preload">, serviceworker
+- Lazy-load and create remaining routes on demand. => serviceworker
+
+조력자들
+* WEB Components 명세
+* 서비스워커
+ => https://jakearchibald.github.io/isserviceworkerready/
+* preload
+* HTTP2
+
+REFS
+https://www.youtube.com/watch?v=CLHGAHSz27s
+
+{% highlight javascript %}
+{% endhighlight %}

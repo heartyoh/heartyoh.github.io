@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "돈 갚아라 잉 !"
+date:   2017-02-05 23:22:00 +0900
+categories: promise
+---
+{% highlight javascript %}
+const 백만원 = 100 * 10000;
+const 셋셀때까지 = 3 * 1000;
+const 빨랑빚갚아라잉 = 요때까지 => {
+  return new Promise((현금, 배째) => setTimeout(()=> {
+    Math.random() < 0.5 ? 현금(백만원) : 배째();
+  }, 요때까지))
+}
+var 카운트 = 1;
+var interval = setInterval(()=>{
+  console.warn(`${카운트++}\n`);
+}, 1000);
+빨랑빚갚아라잉(셋셀때까지).then((금액) => {
+  console.log(`옛따..${금액}원`);
+  clearInterval(interval);
+  console.log(`담에 또 빌려라잉. ㅋㅋ`);
+}, () => {
+  console.warn('배째라.');
+  clearInterval(interval);
+  console.warn('죽을래?');
+});
+{% endhighlight %}
