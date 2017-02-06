@@ -8,13 +8,14 @@ categories: promise
 const 백만원 = 100 * 10000;
 const 셋셀때까지 = 3 * 1000;
 const 돈갚으세요 = 요때까지 => {
-  return new Promise((네, 아니오) => setTimeout(()=> {
-    Math.random() < 0.5 ? 네(백만원) : 아니오('배째라!');
+  return new Promise((네, 못줘) => setTimeout(()=> {
+    Math.random() < 0.5 ? 네(백만원) : 못줘('배째라!');
   }, 요때까지))
 }
+console.warn('돈갚으세요. 셋셀때까지');
 var 카운트 = 1;
 var interval = setInterval(()=>{
-  console.warn(`${카운트++}\n`);
+  console.warn(`${카운트++}`);
 }, 1000);
 돈갚으세요(셋셀때까지).then(돈 => {
   console.log(`여기요..${돈}원`);
@@ -25,4 +26,10 @@ var interval = setInterval(()=>{
   clearInterval(interval);
   console.warn('죽을래?');
 });
+// 돈갚으세요. 셋셀때까지
+// 1
+// 2
+// 3
+// 여기요..1000000원
+// 담에 또 빌려가세요. 싸게 잘해드리께요. ㅋㅋ
 {% endhighlight %}
