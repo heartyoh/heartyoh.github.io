@@ -7,29 +7,29 @@ categories: promise
 {% highlight javascript %}
 const 백만원 = 100 * 10000;
 const 셋셀때까지 = 3 * 1000;
-const 돈갚으세요 = 요때까지 => {
-  return new Promise((네, 못줘) => setTimeout(()=> {
-    Math.random() < 0.5 ? 네(백만원) : 못줘('배째라!');
-  }, 요때까지))
+const 돈갚아라 = 하나둘셋 => {
+  return new Promise((여기, 못줘) => setTimeout(()=> {
+    Math.random() < 0.5 ? 여기(백만원) : 못줘('배째라!');
+  }, 하나둘셋))
 }
-console.warn('돈갚으세요. 셋셀때까지');
+console.warn('돈갚아라. 셋셀때까지');
 var 카운트 = 1;
 var interval = setInterval(()=>{
   console.warn(`${카운트++}`);
 }, 1000);
-돈갚으세요(셋셀때까지).then(돈 => {
-  console.log(`여기요..${돈}원`);
+돈갚아라(셋셀때까지).then(돈 => {
+  console.log(`여기..${돈}원`);
   clearInterval(interval);
-  console.warn(`담에 또 빌려가세요. 싸게 잘해드리께요. ㅋㅋ`);
+  console.warn(`담에 또 빌리셔. 잘해드리께. 크크크`);
 }, 이유 => {
   console.log(이유);
   clearInterval(interval);
   console.warn('죽을래?');
 });
-// 돈갚으세요. 셋셀때까지
+// 돈갚아라. 셋셀때까지
 // 1
 // 2
 // 3
-// 여기요..1000000원
-// 담에 또 빌려가세요. 싸게 잘해드리께요. ㅋㅋ
+// 여기..1000000원
+// 담에 또 빌리셔. 잘해드리께. 크크크
 {% endhighlight %}
