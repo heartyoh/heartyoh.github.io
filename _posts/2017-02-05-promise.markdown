@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "돈 갚으세요 ! 약속 !!"
+title:  "돈 갚아 ! 약속지켜 !!"
 date:   2017-02-05 23:22:00 +0900
 categories: promise
 ---
