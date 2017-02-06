@@ -20,9 +20,9 @@ var interval = setInterval(()=>{
 돈갚으세요(셋셀때까지).then(돈 => {
   console.log(`여기요..${돈}원`);
   clearInterval(interval);
-  console.log(`담에 또 빌려가세요. 싸게 잘해드리께요. ㅋㅋ`);
+  console.warn(`담에 또 빌려가세요. 싸게 잘해드리께요. ㅋㅋ`);
 }, 이유 => {
-  console.warn(이유);
+  console.log(이유);
   clearInterval(interval);
   console.warn('죽을래?');
 });
