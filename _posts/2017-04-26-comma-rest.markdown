@@ -22,7 +22,7 @@ categories: comma, rest
 
 위 문장에서 "쉼표"를 빼고 보시죠.
 
-"Never think just enjoy"
+# Never think just enjoy
 
 문법을 떠나서, 이렇게 해석될 수 있습니다.
 
