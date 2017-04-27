@@ -20,7 +20,7 @@ categories: comma, rest
 
 "," 쉼표입니다.
 
-위 문장에서 "쉼표"를 빼고 해석을 해보시죠.
+위 문장에서 "쉼표"를 빼고 보시죠.
 
 "Never think just enjoy"
 
